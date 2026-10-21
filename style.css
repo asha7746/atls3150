@@ -1,0 +1,30 @@
+
+h1, h2 {
+  color: darkgreen;
+}
+
+p {
+  color: gray;
+}
+
+ul {
+  border: 3px solid darkgreen;
+}
+
+ol {
+  border: 3px solid gray;
+}
+
+ol, ul {
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+dl {
+  color: gray;
+}
+
+dt {
+  font-weight: bold;
+  color: darkgreen;
+}
