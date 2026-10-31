@@ -1,0 +1,146 @@
+
+@charset "UTF-8";
+
+/* form styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f4fc;
+    color: #173b5e;
+    padding: 30px;
+}
+
+#wrapper {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #b5cfe0;
+}
+
+div#formcol1 {
+    float: left;
+    width: 100%;
+}
+
+/* headings */
+
+h1 {
+    color: #005b96;
+    text-align: center;
+    border-bottom: 3px solid #00a6d6;
+    padding-bottom: 15px;
+}
+
+/* form sections */
+
+fieldset {
+    border: 2px solid #89c9e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f4fbff;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #005b96;
+}
+
+/* remove bullets */
+
+#formcol1 li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#formcol1 ul {
+    padding: 0;
+}
+
+/* labels */
+
+#formcol1 label {
+    display: inline-block;
+    width: 130px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* input fields */
+
+input[type="text"] {
+    padding: 9px;
+    border: 1px solid #8bbad4;
+    border-radius: 5px;
+}
+
+/* required fields */
+
+#formcol1 input.reqfield {
+    background-color: #fff8cc;
+}
+
+/* radio buttons */
+
+#multchoice label {
+    display: inline-block;
+    width: auto;
+    margin-right: 20px;
+}
+
+input[type="radio"] {
+    accent-color: #0077b6;
+}
+
+/* keyboard highlighting */
+
+input:focus,
+input:active {
+    background-color: #d0efff !important;
+    outline: 3px solid #0077b6;
+}
+
+input[type="radio"]:focus + label {
+    background-color: #d0efff;
+    color: #005b96;
+}
+
+/* submit button */
+
+.submit-button {
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005b96;
+}
+
+/* smaller screens */
+
+@media (max-width: 600px) {
+    #wrapper {
+        width: auto;
+    }
+
+    #formcol1 label {
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+}
+
+/* end of form css */

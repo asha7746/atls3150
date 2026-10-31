@@ -1,65 +1,75 @@
 
-<div class="flex-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>2020 Proposal Form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
 
-  <header role="banner">
-    <h1>Birdwatching</h1>
-    <img src="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/dove.png" alt="A simple dove logo">
+<body>
+<div id="wrapper">
 
-    <nav role="navigation" aria-label="Main navigation">
-      <ul>
-        <li><span>Home</span></li>
-        <li><a href="#">Get started</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Gear</a></li>
-        <li><a href="#">Forum</a></li>
-      </ul>
-    </nav>
-  </header>
+    <h1>2020 Proposal Form</h1>
+    <p>Please fill out the form below. Fields marked with * are required.</p>
 
-  <main role="main">
+    <form action="" method="post" id="proposal2020">
 
-    <article>
-      <h2>Welcome</h2>
+        <div id="formcol1">
+            <fieldset>
+                <legend>Speaker Info</legend>
 
-      <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
+                <ul>
+                    <li>
+                        <label for="fstspkr1">First Name: *</label>
+                        <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" required>
+                    </li>
 
-      <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
-    </article>
+                    <li>
+                        <label for="lstname1">Last Name: *</label>
+                        <input id="lstname1" name="lstname1" type="text" class="reqfield" required>
+                    </li>
 
-    <aside role="complementary">
-      <h2>Favourite Photos</h2>
+                    <li>
+                        <label for="spkrtitle1">Title:</label>
+                        <input id="spkrtitle1" name="spkrtitle1" type="text" maxlength="48">
+                    </li>
 
-      <h3>North American Birds</h3>
+                    <li>
+                        <label for="company1">Company:</label>
+                        <input id="company1" name="company1" type="text">
+                    </li>
 
-      <div class="photos">
-        <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-1.jpg">
-          <img src="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-1_th.jpg" alt="Small dark bird sitting on a branch">
-        </a>
+                    <li>
+                        <label for="department1">Department:</label>
+                        <input id="department1" name="department1" type="text">
+                    </li>
 
-        <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-2.jpg">
-          <img src="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-2_th.jpg" alt="Blue bird with colourful feathers">
-        </a>
-      </div>
+                    <li>
+                        <label for="address1">Address: *</label>
+                        <input id="address1" name="address1" type="text" class="reqfield" required>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
 
-      <h3>South American Birds</h3>
+        <div id="multchoice">
+            <fieldset>
+                <legend>Type of Presentation</legend>
 
-      <div class="photos">
-        <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-3.jpg">
-          <img src="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-3_th.jpg" alt="White bird with a long curved beak">
-        </a>
+                <input value="1" id="TypeofPres_lec" name="p-type" type="radio">
+                <label for="TypeofPres_lec">Lecture</label>
 
-        <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-4.jpg">
-          <img src="https://raw.githubusercontent.com/mdn/learning-area/main/html/introduction-to-html/document_and_website_structure/favorite-4_th.jpg" alt="Large white bird with black feathers">
-        </a>
-      </div>
-    </aside>
+                <input value="2" id="TypeofPres_lab" name="p-type" type="radio">
+                <label for="TypeofPres_lab">Computer Lab</label>
+            </fieldset>
 
-  </main>
+            <p class="submit-button">
+                <input type="submit" value="Submit your proposal">
+            </p>
+        </div>
 
-  <footer role="contentinfo">
-    <p>This fake website example is CC0 - any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
-
-    <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon by Lorc.</a></p>
-  </footer>
-
+    </form>
 </div>
+</body>
+</html>
